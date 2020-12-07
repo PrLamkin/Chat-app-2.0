@@ -1,0 +1,44 @@
+.sideBar {
+    background-color: var(--body-color);
+    border-top: 1px solid black;
+    max-width: 260px;
+}
+
+.sideBar_Header {
+    display: flex;
+    border-top: 1px solid black;
+    padding-bottom: 10px;
+    padding: 13px;
+}
+
+.sideBar_Info {
+    flex: 1;
+}
+
+.sideBar_Info > h2 {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.sideBar_Info > h3 {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.sideBar_Info > h3 > .MuiSvgIcon-root {
+    font-size: 14px;
+    margin-top: 1px;
+    margin-right: 2px;
+    color: chartreuse;
+}
+
+.sideBar_Header > .MuiSvgIcon-root {
+    padding: 8px;
+    color: var(--body-color);
+    font-size: 18px;
+    background-color: black;
+    border-radius: 999px;
+}
