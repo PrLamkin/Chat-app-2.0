@@ -1,11 +1,24 @@
-import React from 'react';
-import './Header.css'
+import { Avatar } from '@material-ui/core';
+import React from "react";
+import "./Header.css";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
 
 function Header() {
     return (
         <div className="header">
-            //I'll be putting the API call at the top here along with account info
+            <div className="header_left">
+                <Avatar
+                    className="header_avatar"
+                    alt={user?.displayName}
+                    src={user?.photoURl}
+                    />
+                <AccessTimeIcon />
+            </div>
             
+            <div className="header_right">
+                
+            </div>
+
         </div>
     )
 }
