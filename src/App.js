@@ -8,6 +8,11 @@ function App() {
       
       <Header />
 
+      <div className="app_body">
+
+
+      </div>
+      
     </div>
   );
 }
