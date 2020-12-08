@@ -26,7 +26,7 @@ function Chat() {
         );
     }, [roomId])
 
-    console.log(roomDetails);
+    console.log("room details", roomDetails);
     console.log("messages >>> ", roomMessages)
 
     return <div className="chat">
@@ -56,7 +56,7 @@ function Chat() {
             ))}
         </div>
 
-        <ChatInput channelName={roomDetails?.name} channelId={roomDetails?.Id} />
+        <ChatInput channelName={roomDetails?.name} channelId={roomId} />
 
 
     </div>

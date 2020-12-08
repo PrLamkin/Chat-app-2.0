@@ -11,12 +11,15 @@ function ChatInput({ channelName, channelId }) {
     const sendMessage = e => {
         e.preventDefault();
         if (channelId) {
-            db.collection("rooms").doc(channelId).collection("message").add({
+            console.log("channelId", channelId)
+            db.collection("rooms").doc(channelId).collection("messages").add({
             message: input,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             user: user.displayName,
             userImage: user.photoURL,
-            })
+            }) 
+        } else {
+            console.log("heck")
         }
     };
 
