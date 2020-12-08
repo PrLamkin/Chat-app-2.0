@@ -4,6 +4,12 @@
     max-width: 260px;
 }
 
+.sideBar > hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
 .sideBar_Header {
     display: flex;
     border-top: 1px solid black;
@@ -32,7 +38,7 @@
     font-size: 14px;
     margin-top: 1px;
     margin-right: 2px;
-    color: chartreuse;
+    color: green;
 }
 
 .sideBar_Header > .MuiSvgIcon-root {
