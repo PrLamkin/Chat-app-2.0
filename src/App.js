@@ -27,7 +27,7 @@ function App() {
             <Chat />
           </Route>
           <Route path="/">
-            <h1>placeholder</h1>
+            <h1>Welcome, to AllaboutCars Chat Room</h1>
           </Route>
 
         </Switch>
