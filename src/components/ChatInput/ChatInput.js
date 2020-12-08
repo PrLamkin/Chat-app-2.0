@@ -10,9 +10,8 @@ function ChatInput({ channelName, channelId }) {
 
     const sendMessage = e => {
         e.preventDefault();
-
         if (channelId) {
-            db.collection("rooms").doc(channelId).collection("messages", {
+            db.collection("rooms").doc(channelId).collection("message").add({
             message: input,
             timestamp: firebase.firestore.FieldValue.serverTimestamp,
             user: user.displayName,
@@ -22,16 +21,16 @@ function ChatInput({ channelName, channelId }) {
     };
 
     return (
-        <div className="ChatInput">
+        <div className="chatInput">
             <form>
                 <input 
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder={`Message #${channelName}`}/>
-                <button type="submit" onClick={sendMessage}>Send</button>
+                <button type="submit" onClick={ sendMessage }>Send</button>
             </form>
         </div>
     )
 }
 
-export default ChatInput
+export default ChatInput;
